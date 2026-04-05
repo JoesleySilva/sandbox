@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.3 on linux)" generated="2026-04-04T21:32:37.369081" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/p527488/Downloads/venv/sandbox/tests">
+<suite id="s1-s1" name="Web" source="/home/p527488/Downloads/venv/sandbox/tests/web">
+<suite id="s1-s1-s1" name="Form Test" source="/home/p527488/Downloads/venv/sandbox/tests/web/form_test.robot">
+<test id="s1-s1-s1-t1" name="Teste de Carregamento da Página" line="6">
+<kw name="Abrir Navegador" owner="web_keywords">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-04T21:32:37.570705" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/p527488/Downloads/venv/sandbox/reports/browser/traces/temp/a9106e05-dad4-46bf-adcc-ab574fc271df"}</msg>
+<msg time="2026-04-04T21:32:37.577182" level="INFO">Starting Browser process /home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49465</msg>
+<msg time="2026-04-04T21:32:38.323077" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/p527488/Downloads/venv/sandbox/reports/browser/traces/temp/a9106e05-dad4-46bf-adcc-ab574fc271df"}</msg>
+<arg>chromium</arg>
+<arg>headless=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-04T21:32:37.569984" elapsed="0.753387"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-04T21:32:38.325998" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-04T21:32:38.339877" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-04T21:32:38.339993" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-04T21:32:38.323785" elapsed="0.016334"/>
+</kw>
+<status status="PASS" start="2026-04-04T21:32:37.569112" elapsed="0.771204"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-04T21:32:38.341395" level="INFO">${start} = 1775349158.341269</msg>
+<var>${start}</var>
+<arg>__import__('time').time()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-04T21:32:38.340635" elapsed="0.000811"/>
+</kw>
+<kw name="Acessar Página" owner="form_page">
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-04T21:32:41.691674" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/automation-practice-form</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-04T21:32:38.342200" elapsed="3.349701"/>
+</kw>
+<status status="PASS" start="2026-04-04T21:32:38.341768" elapsed="3.350278"/>
+</kw>
+<kw name="Aguardar Página Carregar" owner="form_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-04T21:32:41.996739" level="INFO">Waited for Element with selector css=#root header a img at state visible</msg>
+<arg>${LOGO}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-04T21:32:41.692728" elapsed="0.304334"/>
+</kw>
+<status status="PASS" start="2026-04-04T21:32:41.692323" elapsed="0.304999"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-04T21:32:41.998748" level="INFO">${end} = 1775349161.99856</msg>
+<var>${end}</var>
+<arg>__import__('time').time()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-04T21:32:41.997738" elapsed="0.001090"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-04T21:32:42.000038" level="INFO">${tempo} = 3.6572909355163574</msg>
+<var>${tempo}</var>
+<arg>${end} - ${start}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-04T21:32:41.999094" elapsed="0.001044"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-04T21:32:42.001351" level="INFO">Tempo total: 3.6572909355163574</msg>
+<arg>Tempo total: ${tempo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-04T21:32:42.000553" elapsed="0.000962"/>
+</kw>
+<kw name="Fechar Navegador" owner="web_keywords">
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-04-04T21:32:42.057429" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-04T21:32:42.002645" elapsed="0.054962"/>
+</kw>
+<status status="PASS" start="2026-04-04T21:32:42.001898" elapsed="0.055828"/>
+</kw>
+<status status="PASS" start="2026-04-04T21:32:37.568374" elapsed="4.489546"/>
+</test>
+<status status="PASS" start="2026-04-04T21:32:37.404862" elapsed="4.660464"/>
+</suite>
+<status status="PASS" start="2026-04-04T21:32:37.403966" elapsed="4.670217"/>
+</suite>
+<status status="PASS" start="2026-04-04T21:32:37.370644" elapsed="4.704385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Web" id="s1-s1" pass="1" fail="0" skip="0">Tests.Web</stat>
+<stat name="Form Test" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.Web.Form Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

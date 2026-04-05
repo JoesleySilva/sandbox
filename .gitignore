@@ -1,0 +1,6 @@
+venv/
+lib/
+node_modules/
+__pycache__/
+.playwright/
+*.log

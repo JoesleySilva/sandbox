@@ -1,0 +1,4 @@
+url: "https://demoqa.com/automation-practice-form"
+browser: "chromium"
+headless: true
+timeout: 10s

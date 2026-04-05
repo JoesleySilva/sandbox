@@ -1,0 +1,55 @@
+{"level":30,"time":"2026-04-05T00:32:38.227Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Listening on 127.0.0.1:49465"}
+{"level":30,"time":"2026-04-05T00:32:38.248Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-05T00:32:38.321Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Adding browser to stack: chromium, version: 147.0.7727.15"}
+{"level":30,"time":"2026-04-05T00:32:38.321Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-05T00:32:38.322Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-05T00:32:38.329Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-04-05T00:32:38.329Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-04-05T00:32:38.329Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@664a6c9442f9182c371f171d3cc25079\"},\"name\":\"chromium\",\"id\":\"browser=745a07eb-db2f-47d4-8808-e15702253384\",\"headless\":true}"}
+{"level":30,"time":"2026-04-05T00:32:38.329Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Trace file: "}
+{"level":30,"time":"2026-04-05T00:32:38.338Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Setting default timeout for context context=c2156009-d524-469b-81cc-6b1559251f88 to 10000"}
+{"level":30,"time":"2026-04-05T00:32:38.338Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Changed active context: context=c2156009-d524-469b-81cc-6b1559251f88"}
+{"level":30,"time":"2026-04-05T00:32:38.338Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method newContext"}
+{"level":30,"time":"2026-04-05T00:32:38.345Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-05T00:32:38.345Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=c2156009-d524-469b-81cc-6b1559251f88\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@99c10392a0c972dcf97235af16780c9d\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@664a6c9442f9182c371f171d3cc25079\"},\"name\":\"chromium\",\"id\":\"browser=745a07eb-db2f-47d4-8808-e15702253384\",\"headless\":true}"}
+{"level":30,"time":"2026-04-05T00:32:38.398Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-05T00:32:38.398Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Changed active page"}
+{"level":30,"time":"2026-04-05T00:32:41.690Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-05T00:32:41.695Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-05T00:32:41.695Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Strict mode is enabled, find Locator with css=#root header a img in page."}
+{"level":30,"time":"2026-04-05T00:32:41.994Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-05T00:32:42.007Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-04-05T00:32:42.016Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Removed page=1f5e9ed8-4a3e-496e-819c-07bfbb2e402a from context=c2156009-d524-469b-81cc-6b1559251f88 page stack"}
+{"level":30,"time":"2026-04-05T00:32:42.056Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js:8777:13)
+    at PlaywrightServer.getActiveBrowser (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js:9689:52)
+    at PlaywrightServer.setTimeout (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js:9887:56)
+    at Object.onReceiveHalfClose (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-05T00:32:42.063Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-05T00:32:42.063Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js:8777:13)
+    at PlaywrightServer.getActiveBrowser (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js:9689:52)
+    at PlaywrightServer.setTimeout (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js:9887:56)
+    at Object.onReceiveHalfClose (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-05T00:32:42.071Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-05T00:32:42.071Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-05T00:32:42.104Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-05T00:32:42.104Z","pid":118465,"hostname":"p527488-System-Product-Name","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.3 on linux)" generated="2026-04-04T21:00:47.507978" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/home/p527488/Downloads/venv/sandbox/robot-playwright/test.robot">
+<test id="s1-t1" name="Medir Tempo de Carregamento" line="5">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-04T21:00:47.685314" level="INFO">${start} = 1775347247.685235</msg>
+<var>${start}</var>
+<arg>__import__('time').time()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-04T21:00:47.684703" elapsed="0.000658"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-04T21:00:47.686309" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/p527488/Downloads/venv/sandbox/robot-playwright/browser/traces/temp/2f22cf28-be5f-4007-8323-5371cdd65ed4"}</msg>
+<msg time="2026-04-04T21:00:47.693112" level="INFO">Starting Browser process /home/p527488/Downloads/venv/sandbox/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:56319</msg>
+<msg time="2026-04-04T21:00:48.412437" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/p527488/Downloads/venv/sandbox/robot-playwright/browser/traces/temp/2f22cf28-be5f-4007-8323-5371cdd65ed4"}</msg>
+<arg>chromium</arg>
+<arg>headless=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-04T21:00:47.685660" elapsed="0.727002"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-04T21:00:48.414343" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-04T21:00:48.431683" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-04T21:00:48.431805" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-04T21:00:48.412955" elapsed="0.018979"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-04T21:00:51.456657" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/automation-practice-form</msg>
+<arg>https://demoqa.com/automation-practice-form</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-04T21:00:48.432261" elapsed="3.024724"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-04T21:00:51.774349" level="INFO">Waited for Element with selector css=#root header a img at state visible</msg>
+<arg>css=#root header a img</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-04T21:00:51.457353" elapsed="0.317169"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-04T21:00:51.775362" level="INFO">${end} = 1775347251.7752786</msg>
+<var>${end}</var>
+<arg>__import__('time').time()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-04T21:00:51.774827" elapsed="0.000569"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-04T21:00:51.776063" level="INFO">${load_time} = 4.090043544769287</msg>
+<var>${load_time}</var>
+<arg>${end} - ${start}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-04-04T21:00:51.775636" elapsed="0.000460"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-04T21:00:51.776638" level="INFO">Page load time: 4.090043544769287 seconds</msg>
+<arg>Page load time: ${load_time} seconds</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-04T21:00:51.776297" elapsed="0.000395"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-04-04T21:00:51.823572" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-04T21:00:51.776870" elapsed="0.046882"/>
+</kw>
+<status status="PASS" start="2026-04-04T21:00:47.683712" elapsed="4.140338"/>
+</test>
+<status status="PASS" start="2026-04-04T21:00:47.509096" elapsed="4.352860"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
